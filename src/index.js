@@ -8,8 +8,11 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 
-mongoose.connect("mongodb+srv://functionup-cohort:G0Loxqc9wFEGyEeJ@cluster0.rzotr.mongodb.net/Pritesh8769811-DB?retryWrites=true&w=majority", {
+
+mongoose.connect("mongodb+srv://Mdsaif000:9OeeAy5B4g2A5lxZ@cluster0.a7szs.mongodb.net/saif1?retryWrites=true&w=majority", {
     useNewUrlParser: true
+
+
 })
 .then( () => console.log("MongoDb is connected"))
 .catch ( err => console.log(err) )
@@ -19,11 +22,18 @@ mongoose.connect("mongodb+srv://functionup-cohort:G0Loxqc9wFEGyEeJ@cluster0.rzot
 //         console.log ("inside GLOBAL MW");
 //         next();
 //   }
+
 //   );
 
 app.use('/', route);
 
 
+
 app.listen(process.env.PORT || 3000, function () {
     console.log('Express app running on port ' + (process.env.PORT || 3000))
 });
+
+
+
+
+
